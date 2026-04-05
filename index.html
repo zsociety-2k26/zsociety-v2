@@ -1682,7 +1682,7 @@
                     <h2><i class="fas fa-file-contract"></i> Politique de Confidentialité</h2>
                     <div class="policy-wrapper glass" style="margin-top: 20px; border-radius: 12px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2); max-height: 600px; overflow-y: auto; padding: 25px; font-size: 13px; line-height: 1.6; color: var(--text-secondary);">
                         <h1 style="font-family: var(--font-display); color: var(--purple3); font-size: 1.4rem; margin-bottom: 15px;">Politique de Confidentialité et Protection des Données (RGPD)</h1>
-                        <p style="margin-bottom: 15px;">La présente Politique de Confidentialité a pour but d'informer les utilisateurs du service <strong>ZSOCIETY</strong> sur la manière dont leurs données à caractère personnel sont collectées, traitées et protégées, conformément au Règlement Général sur la Protection des Données (RGPD) n°2016/679 du 27 avril 2016 et à la Loi Informatique et Libertés.</p>
+                        <p style="margin-bottom: 15px;">La présente Politique de Confidentialité a pour but d'informer les utilisateurs du service <strong>REACHER</strong> sur la manière dont leurs données à caractère personnel sont collectées, traitées et protégées, conformément au Règlement Général sur la Protection des Données (RGPD) n°2016/679 du 27 avril 2016 et à la Loi Informatique et Libertés.</p>
 
                         <h3 style="color: var(--purple2); margin-top: 25px; margin-bottom: 10px;">1. PRÉAMBULE ET DÉFINITIONS</h3>
                         <p>Le service ZSOCIETY opère en tant qu'outil d'agrégation d'informations publiques et historiques. Nous accordons une importance capitale à la protection de la vie privée et à la transparence des traitements.</p>
@@ -1693,10 +1693,10 @@
                         </ul>
 
                         <h3 style="color: var(--purple2); margin-top: 25px; margin-bottom: 10px;">2. IDENTITÉ DU RESPONSABLE DU TRAITEMENT</h3>
-                        <p>Le traitement des données est assuré par l'équipe technique de ZSOCIETY. En l'absence de représentant légal désigné pour ce moteur de recherche de démonstration, les demandes sont traitées directement via l'interface d'administration sécurisée accessible par les gestionnaires du serveur.</p>
+                        <p>Le traitement des données est assuré par l'équipe technique de REACHER. En l'absence de représentant légal désigné pour ce moteur de recherche de démonstration, les demandes sont traitées directement via l'interface d'administration sécurisée accessible par les gestionnaires du serveur.</p>
 
                         <h3 style="color: var(--purple2); margin-top: 25px; margin-bottom: 10px;">3. NATURE ET SOURCE DES DONNÉES</h3>
-                        <p>Les données indexées proviennent exclusivement de sources de données publiques, de bases de données historiques ou de fuites de données rendues accessibles publiquement sur internet. ZSOCIETY ne procède à aucune collecte directe d'informations privées non publiées. Les catégories de données traitées sont :</p>
+                        <p>Les données indexées proviennent exclusivement de sources de données publiques, de bases de données historiques ou de fuites de données rendues accessibles publiquement sur internet. REACHER ne procède à aucune collecte directe d'informations privées non publiées. Les catégories de données traitées sont :</p>
                         <ul>
                             <li>Identité (Nom, Prénom, Genre)</li>
                             <li>État-civil (Date et lieu de naissance, Nationalité)</li>
@@ -1719,7 +1719,7 @@
                         <p>Nous utilisons des protocoles de chiffrement de pointe (TLS/SSL) pour tous les flux. Les bases de données sont isolées et l'accès administratif est protégé par des mécanismes de contrôle d'accès stricts pour prévenir toute fuite ou altération des données.</p>
 
                         <h3 style="color: var(--purple2); margin-top: 25px; margin-bottom: 10px;">7. DROITS DES PERSONNES (DROIT À L'OUBLI)</h3>
-                        <p>Vous disposez d'un droit d'accès, de rectification et d'effacement de vos données. Pour garantir votre droit à l'oubli, ZSOCIETY a mis en place une procédure simplifiée :</p>
+                        <p>Vous disposez d'un droit d'accès, de rectification et d'effacement de vos données. Pour garantir votre droit à l'oubli, REACHER a mis en place une procédure simplifiée :</p>
                         <ol>
                             <li>Utilisez le formulaire ci-contre pour soumettre votre demande.</li>
                             <li>L'administrateur valide l'identité et la pertinence de la demande.</li>
@@ -2309,10 +2309,10 @@
                 textSecondary: document.getElementById('textSecondaryPicker').value,
                 btnText: document.getElementById('btnTextPicker').value
             };
-            localStorage.setItem('zsociety_settings', JSON.stringify(settings));
+            localStorage.setItem('reacher_settings', JSON.stringify(settings));
         }
         function loadSettings() {
-            const saved = localStorage.getItem('zsociety_settings');
+            const saved = localStorage.getItem('reacher_settings');
             if (saved) {
                 const s = JSON.parse(saved);
                 if (s.btnColor) updateBtnColor(s.btnColor);
@@ -2425,7 +2425,7 @@
                 'trouduc', 'niquer', 'tg', 'abruti', 'nazi', 'hitler', 'raciste', 'negre', 'bougnoule',
                 'nigger', 'cunt', 'dick', 'pussy', 'slut', 'whore', 'bastard', 'tosse',
                 'suicide', 'tue toi', 'meurs', 'pendre', 'égorger', 'kill yourself', 'kys', 'die',
-                'zsociety', 'admin', 'moderateur', 'staff', 'support', 'hacking', 'piratage',
+                'reacher', 'admin', 'moderateur', 'staff', 'support', 'hacking', 'piratage',
                 'test', 'tester', 'testeur', 'demo', 'essai', 'entree', 'dummy', 'asdf', 'qwerty', 'leak'
             ];
             const allText = (nom + prenom).toLowerCase().replace(/[\s\-_]/g, '');
